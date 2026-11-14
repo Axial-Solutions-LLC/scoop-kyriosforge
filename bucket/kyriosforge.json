@@ -1,0 +1,21 @@
+{
+    "version": "0.1.79",
+    "description": "Desktop companion app for KyriosForge, a self-hosted container fleet management platform -- notifications and quick container actions, not a full console replacement.",
+    "homepage": "https://axialsolutions.io",
+    "license": "Proprietary",
+    "notes": "First launch asks for your KyriosForge hub address and API token. No phone-home: this app only ever talks to the hub you point it at.",
+    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.kyriosforge.io/releases/kyriosforge-forge-app/0.1.79/kyrios-forge-app-windows-x86_64.exe",
+            "hash": "58a6e4e3f78ba769fbed62fb2ee0166342faef8cadb33b7a1ef13254347ee467"
+        }
+    },
+    "bin": "KyriosForge.exe",
+    "shortcuts": [
+        [
+            "KyriosForge.exe",
+            "KyriosForge Desktop Companion"
+        ]
+    ]
+}
