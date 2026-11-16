@@ -28,12 +28,14 @@ The app's own per-user settings (hub address, API token) live in
 entirely, so an upgrade (new version, new extracted folder) never touches
 them — no `persist` entry needed.
 
-**Not yet verified on a real Windows machine** — this environment has no
-Windows host to run `scoop install` against. Before announcing this bucket
-anywhere, do a real install/upgrade/uninstall pass on Windows: confirm
-`innounp` actually unpacks this specific Inno Setup build (LZMA2/ultra64,
-solid compression) cleanly, the shim launches the app, and the shortcut
-shows up in the Start Menu.
+**Verified on real Windows (2026-11-14).** Ran install → launch → uninstall
+on an actual Windows 11 host: `innounp` auto-installed as a dependency,
+hash matched, extraction produced exactly the one file the installer's own
+`[Files]` section places (`KyriosForge.exe`), the shim + Start Menu
+shortcut were created, the launched app stayed responsive (`Responding:
+True`) with normal CPU use over a sustained window, and `scoop uninstall`
+removed the shim, shortcut, and app directory cleanly (confirmed empty
+afterward).
 
 ## Updating for a new version
 
