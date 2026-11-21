@@ -6,7 +6,7 @@
 ## Install
 
 ```powershell
-scoop bucket add kyriosforge https://github.com/MaverickTN/scoop-kyriosforge
+scoop bucket add kyriosforge https://github.com/Axial-Solutions-LLC/scoop-kyriosforge
 scoop install kyriosforge/kyriosforge
 ```
 
